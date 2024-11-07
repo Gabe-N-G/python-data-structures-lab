@@ -27,11 +27,10 @@ def manage_students():
     students = ['Gabe', 'Manny', 'Joey', 'Tim']
     first_student = students[1]
     last_student= students[-1]
-    # print(students, first_student, last_student)
+    print(students, first_student, last_student)
 
 # Call the function and print the result
 print('Exercise 1:', manage_students())
-
 
 # Exercise 2: Loop and String Concatenation
 #
@@ -79,3 +78,22 @@ def hometown_info():
 # Call the function and print the result
 print('Exercise 4:', hometown_info())
 
+# Exercise 5: Iterating Over Dictionary Items
+#
+# Define an empty list named home_town_items.
+# Use a for loop to iterate over the key: value pairs in the home_town dictionary and append a string with the following format to home_town_items: "<key> = <value>"
+
+def list_home_town_items():
+    # your code here
+    hometown = {
+        'city' : 'Paramus',
+        'state' : 'New Jersey',
+        'population' : 26282,
+    }
+    home_town_items = []
+    for key, val in hometown.items():
+        home_town_items.append (f"{key} = {val}")
+    print(home_town_items)
+
+# Call the function and print the result
+print('Exercise 5:', list_home_town_items())
